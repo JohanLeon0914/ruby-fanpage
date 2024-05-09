@@ -1,6 +1,6 @@
 ---
 import { Carousel } from "../components/Carousel";
-import Lore from "../components/Lore.astro";
+import Fanarts from "../components/Fanarts.astro";
 import Profile from "../components/Profile.astro";
 import Redes from "../components/Enlaces.astro";
 import Layout from "../layouts/Layout.astro";
@@ -8,7 +8,9 @@ import Footer from "../components/footer.astro";
 ---
 
 <Layout title="Ruby Runeheart - Fan Page">
-  <main style="background-image: url('assets/background_image.jpg');">
+  <main
+    style="background-image: url('assets/background_image.jpg'); background-size: cover;"
+  >
     <div id="inicio" class="pt-[50px]">
       <Carousel client:load />
     </div>
@@ -17,8 +19,8 @@ import Footer from "../components/footer.astro";
       <Profile />
     </div>
 
-    <div id="lore">
-      <Lore />
+    <div id="fanarts">
+      <Fanarts />
     </div>
 
     <div id="enlaces">
